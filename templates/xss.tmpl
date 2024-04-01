@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RFC5322 - The Fun Begins</title>
+</head>
+<body>
+    <h1>RFC5322 - The Fun Begins (or does it?)</h1>
+    {{- if .error }}
+        <p>Hrm.. looks like your email is not valid.</p>
+    {{ else }}
+    <p>Your email address is <b>{{ .email | noescape }}</b></p>
+    {{- end }}
+</body>
+</html>
